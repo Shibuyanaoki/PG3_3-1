@@ -11,3 +11,11 @@ int IScene::GetSceneNo()
 {
 	return SceneNo;
 }
+
+void IScene::SetKeys(char* keys, char* preKeys)
+{
+	keys_ = keys;
+	preKeys_ = preKeys;
+}
+
+
