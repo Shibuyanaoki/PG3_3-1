@@ -26,6 +26,10 @@ int GameManeger::Run() {
 	while (Novice::ProcessMessage() == 0) {
 		Novice::BeginFrame(); //フレームの開始
 
+		// キー入力を受け取る
+		memcpy(preKeys_, keys_, 256);
+		Novice::GetHitKeyStateAll(keys_);
+
 		//シーンチェック
 		precSceneNo_ = currentSceneNo_;
 		currentSceneNo_ = sceneArr_[currentSceneNo_]->GetSceneNo();
