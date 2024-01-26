@@ -1,6 +1,6 @@
 ﻿#pragma once
 
-enum Scene { TITLE, STAGE, CLEAR,SCENEMAX };
+enum Scene { TITLE, STAGE, CLEAR, SCENEMAX };
 
 
 class IScene
@@ -19,7 +19,7 @@ public:
 
 	virtual void Update() = 0;
 
-	virtual void Draw() = 0;  
+	virtual void Draw() = 0;
 
 	virtual ~IScene();
 
@@ -29,7 +29,7 @@ public:
 	/// <summary>
 	/// キー入力
 	/// </summary>
-	void SetKeys(char* keys,char* preKeys);
+	void SetKeys(char* keys, char* preKeys);
 
 };
 

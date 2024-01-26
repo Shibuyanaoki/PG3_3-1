@@ -3,11 +3,16 @@
 
 void ClearScene::Init()
 {
-
+	
 }
 
 void ClearScene::Update()
 {
+
+	if (keys_[DIK_SPACE] && preKeys_[DIK_SPACE] == 0) {
+		SceneNo = TITLE;
+
+	}
 
 }
 

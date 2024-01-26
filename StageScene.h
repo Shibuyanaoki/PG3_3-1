@@ -12,6 +12,8 @@ public:
 
 	void Draw() override;
 
+	void Rset();
+
 private:
 
 	Vector2 player;
@@ -24,7 +26,7 @@ private:
 
 	Vector2 moveP;
 
-	float radius = 16;
+	const float radius = 16;
 
 
 };
